@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Botão</title>
+    <link rel="stylesheet" href="style.css/style15.css">
+</head>
+<body>
+    <div class="container">
+        <div class="switch">
+            <input type="checkbox" id="toggle" class="switch-checkbox">
+            <label for="toggle" class="switch-label">
+                <span class="switch-button"></span>
+            </label>
+        </div>
+    </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        toggle.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
